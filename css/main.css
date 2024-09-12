@@ -168,7 +168,7 @@ section#hero .container > p {
   color: var(--light-color);
 }
 section#hero .hero_bottom_fix {
-  margin-top: calc(2 * var(--spacing-s));
+  margin-top: calc(1.5 * var(--spacing-s));
 }
 section#hero .hero_bottom_fix .container {
   display: flex;
