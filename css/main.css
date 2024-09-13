@@ -65,6 +65,10 @@ h1 {
   font-size: var(--font-size-xl);
 }
 
+.flex{
+  display: flex;
+}
+
 img {
   width: 100%;
 }
@@ -240,6 +244,23 @@ section#hero .hero_bottom_fix .container .scroll_down {
   cursor: pointer;
   font-size: var(--font-size-md);
 }
+/* About Section */
+#about{
+  background: linear-gradient(to right, #fcfaf8, #fff6ee);
+}
+ .about-inner{
+  gap: 2rem;
+  margin-top: var(--spacing-2x);
+  justify-content: space-between;
+}
+.about-inner p{
+  width: 40%;
+}
+.about-img{
+  width: 60%;
+}
+
+/* Footer */
 
 section#menu .product_lists {
   display: grid;
@@ -339,6 +360,21 @@ section#footer h2 {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /* about */
+  .about-inner{
+    display: block;
+    }
+    .about-inner p{
+      width: 100%;
+      font-weight: 400;
+    }
+    .about-img{
+      margin-top: 1.5rem;
+      width:100%;
+    }
+    .about-img img{
+      width:100%;
+    }
 }
 /* For mobile devices */
 @media (max-width: 480px) {
