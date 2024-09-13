@@ -224,7 +224,7 @@ section#hero .hero_bottom_fix .container .scroll_down {
 #about{
   background: linear-gradient(to right, #fcfaf8, #fff6ee);
 }
-.about-inner{
+ .about-inner{
   gap: 2rem;
   margin-top: var(--spacing);
   justify-content: space-between;
