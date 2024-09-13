@@ -64,6 +64,10 @@ h1 {
   font-size: var(--font-size-xl);
 }
 
+.flex{
+  display: flex;
+}
+
 /* Links */
 a {
   color: var(--primary-color);
@@ -216,7 +220,23 @@ section#hero .hero_bottom_fix .container .scroll_down {
   cursor: pointer;
   font-size: var(--font-size-md);
 }
+/* About Section */
+#about{
+  background: linear-gradient(to right, #fcfaf8, #fff6ee);
+}
+.about-inner{
+  gap: 2rem;
+  margin-top: var(--spacing);
+  justify-content: space-between;
+}
+.about-inner p{
+  width: 40%;
+}
+.about-img{
+  width: 60%;
+}
 
+/* Footer */
 section#footer {
   background-color: var(--text-color-h);
   padding: var(--spacing-2x);
@@ -269,5 +289,20 @@ section#footer h2 {
   section#hero .hero_bottom_fix .container .scroll_down {
     width: 80px;
     height: 80px;
+  }
+  /* about */
+  .about-inner{
+  display: block;
+  }
+  .about-inner p{
+    width: 100%;
+    font-weight: 400;
+  }
+  .about-img{
+    margin-top: 1.5rem;
+    width:100%;
+  }
+  .about-img img{
+    width:100%;
   }
 }/*# sourceMappingURL=main.css.map */
