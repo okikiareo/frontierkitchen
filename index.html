@@ -7,8 +7,12 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      />
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -55,35 +59,41 @@
 
     <!-- About Us Section -->
     <section id="about">
-      <div class="container">
-        <div class="heading_">
-          <h2>About Us</h2>
-        <p>Discover the story behind Frontier Kitchen.</p>
-      </div>
-        <div class="about-inner flex">
+      <div class="container about-box flex">
+        <div class="about-info">
+          <div class="heading_">
+            <h2>About Us</h2>
+           <h3>Discover the story behind Frontier Kitchen.</h3>
+         </div>
           <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo a voluptatum
              asperiores quis, dolor excepturi vitae esse quaerat modi dicta 
              deleniti maxime nulla nobis repellendus at voluptatem, perferendis s
-             apiente? Dolorum?  deleniti maxime nulla nobis repellendus at voluptatem, perferendis
-             deleniti maxime nulla nobis repellendus at voluptatem, perferendis </p> 
-        <div class="about-img">
-          <img src="assets/about-img.jpg" alt="">
+             apiente? Dolorum?  deleniti maxime nulla nobis repellendus at voluptatem </p> 
+        <a href="#" class="cta-btn">Read More</a>
         </div>
-        
-        
+        <div class="about_img">
+          <div class="img-container">
+            <img src="assets/about-img.jpg" class="abt-1" alt="">
+            <img src="assets/about-img.jpg" class="abt-2" alt="">
+            <img src="assets/about-img.jpg" class="abt-3" alt="">
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Menu Section -->
+    <!-- First Menu Section -->
     <section id="menu">
       <div class="container">
        <div class="heading_section">
          <h2>Our Menu</h2>
         <p>Explore a variety of dishes crafted with love.</p>
+        <span class="menu_line">
+        </span>
        </div>
 
-       <div class="product_lists">
-        <div class="product">
+       <div class="swiper product_lists">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide product">
           <div class="product_image">
             <img src="/assets/gashubburner.jpg" alt="product image">
 
@@ -94,7 +104,7 @@
             <a href="#" class="btn">check details</a>
           </div>
         </div>
-        <div class="product">
+        <div class="swiper-slide product">
           <div class="product_image">
             <img src="/assets/kitchenranagehood.jpg" alt="product image">
 
@@ -105,7 +115,7 @@
             <a href="#" class="btn">check details</a>
           </div>
         </div>
-        <div class="product">
+        <div class="swiper-slide product">
           <div class="product_image">
             <img src="/assets/microwaveoven.jpg" alt="product image">
 
@@ -116,7 +126,29 @@
             <a href="#" class="btn">check details</a>
           </div>
         </div>
-        <div class="product">
+        <div class="swiper-slide product">
+          <div class="product_image">
+            <img src="/assets/moreaccessories.jpg" alt="product image">
+
+          </div>
+          <div class="product_details">
+            <h4>More Accessories</h4>
+            <p>check out more accessories in store</p>
+            <a href="#" class="btn">check details</a>
+          </div>
+        </div>
+        <div class="swiper-slide product">
+          <div class="product_image">
+            <img src="/assets/moreaccessories.jpg" alt="product image">
+
+          </div>
+          <div class="product_details">
+            <h4>More Accessories</h4>
+            <p>check out more accessories in store</p>
+            <a href="#" class="btn">check details</a>
+          </div>
+        </div>
+        <div class="swiper-slide product">
           <div class="product_image">
             <img src="/assets/moreaccessories.jpg" alt="product image">
 
@@ -128,15 +160,68 @@
           </div>
         </div>
        </div>
+  <!-- navigation arrows (optional) -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <!-- pagination dots (optional) -->
+  <div class="swiper-pagination"></div>
+       </div>
+      </div>
+      <div class="store-link flex">
+       <a href="">Check Store</a>
       </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
-      <div class="container">
+      <div class=" testimonial-box container">
         <div class="heading_section">
           <h2>Customer Reviews</h2>
         <p>See what our customers are saying.</p>
+        </div>
+        <div class="review-container flex">
+          <div class="scrolling-wrapper">
+          <div class="review-card">
+          <div class="review-bio center flex">
+            <img src="/assets/test-1.jpg" alt="">
+            <h4>Ronald David</h4>
+            <!-- <p>CEO, Founder XYZ Inc</p> -->
+          </div>
+          <p>
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Natus architecto neque eius, doloremque rerum iure.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          </p>
+        </div>
+        <div class="review-card">
+          <div class="review-bio center flex">
+            <img src="/assets/test-1.jpg" alt="">
+            <h4>Travis John</h4>
+            <!-- <p>CEO, Founder XYZ Inc</p> -->
+          </div>
+          <p>
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Natus architecto neque eius, doloremque rerum iure.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Natus architecto neque eius, doloremque rerum iure.
+          
+          </p>
+        </div>
+        <div class="review-card">
+          <div class="review-bio center flex">
+            <img src="/assets/test-1.jpg" alt="">
+            <h4>Adebayo Emeka</h4>
+            <!-- <p>CEO, Founder XYZ Inc</p> -->
+          </div>
+          <p>
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Natus architecto neque eius, doloremque rerum iure.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Natus architecto neque eius, doloremque rerum iure.
+          
+          </p>
+        </div>
+      </div>
         </div>
       </div>
     </section>
@@ -149,9 +234,7 @@
       </div>
     </section>
 
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

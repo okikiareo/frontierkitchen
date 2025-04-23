@@ -20,3 +20,28 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop;
 });
+
+const menuSwiper = new Swiper('.product_lists', {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: { slidesPerView: 2 },  /* small tablets */
+    768: { slidesPerView: 3 },  /* large tablets */
+    1024: { slidesPerView: 4 }  /* desktop */
+  }
+});
+
+const wrapper = document.querySelector('.scrolling-wrapper');
+if (wrapper) {
+  // duplicate its contents so we have two back-to-back sets
+  wrapper.innerHTML += wrapper.innerHTML;
+}
