@@ -45,3 +45,10 @@ if (wrapper) {
   // duplicate its contents so we have two back-to-back sets
   wrapper.innerHTML += wrapper.innerHTML;
 }
+
+(function updateCopyrightYear() {
+  const yearEl = document.getElementById('year');
+  if (!yearEl) return;
+  const now = new Date();
+  yearEl.textContent = now.getFullYear();
+})();

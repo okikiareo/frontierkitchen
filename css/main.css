@@ -81,6 +81,10 @@ h1 {
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 img {
   width: 100%;
 }
@@ -120,7 +124,7 @@ a:hover {
 
 /* Section Styles */
 section {
-  padding-block: var(--spacing-4x);
+  padding-block: var(--spacing-2x);
   min-height: 100vh;
 }
 
@@ -590,29 +594,34 @@ section#menu .product_lists .product .product_details p {
 
 
 /* FOOTER */
-/* section#footer {
-  background-color: var(--text-color-h);
+section#footer {
+  background-color: #292929;
   padding: var(--spacing-2x);
+  color: #cccccc;
+  min-height: 70vh;
+  font-weight: 400;
 }
+
 section#footer h2 {
   color: var(--white-color);
-} */
-
-/* .footer-main img{
-  width: 1rem;
 }
-   */
 
-/* Main Footer */
+section#footer h4 {
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.footer-brand h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
 
 .footer-main {
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .footer-container {
   gap: 5rem;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .footer-brand {
@@ -620,7 +629,7 @@ section#footer h2 {
 }
 
 .footer-brand img {
-  width: 1rem;
+  width: 1.2rem;
 }
 
 .foot-links {
@@ -628,79 +637,43 @@ section#footer h2 {
   width: 40%;
 }
 
-/*
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
-  }
-  .footer-brand h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-  }
-  .footer-brand p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 1.5rem;
-  }
-  .social-links {
-    display: flex;
-    gap: 0.75rem;
-  }
-  .social-links img {
-    width: 2rem;
-    border-radius: 50%;
-  }
-  .footer-column h4 {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-  }
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .footer-column ul li {
-    margin-bottom: 0.5rem;
-  }
-  .footer-column ul li a {
-    color: #333;
-    font-size: 0. ninerem;
-    text-decoration: none;
-  }
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding: 1.5rem 0;
+}
 
-  .footer-bottom {
-    border-top: 1px solid #eee;
-    padding: 1.5rem 0;
-  }
-  .bottom-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .legal-links a {
-    margin-left: 1rem;
-    color: #333;
-    font-size: 0. ninerem;
-    text-decoration: none;
-  }
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
 
-  @media (max-width: 768px) {
-    .subscribe-wrapper {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .subscribe-image {
-      text-align: center;
-      margin-top: 1.5rem;
-    }
-    .bottom-wrapper {
-      flex-direction: column;
-      gap: 1rem;
-      text-align: center;
-    }
-  } */
+.social-links a {
+  width: 3rem;
+  height: 3rem;
+  background: #6b6b6b;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.social-links img {
+  /* margin-right: 1rem; */
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-links a {
+  margin-left: 1rem;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
 
 /* ===================================== */
 /* Responsive Design */
@@ -851,6 +824,14 @@ section#footer h2 {
     border-radius: 10px;
     margin-right: 0rem;
   }
+
+  .footer-brand {
+    width: 100%;
+  }
+
+  .foot-links {
+    width: 95%;
+  }
 }
 
 /* For mobile devices */
@@ -891,7 +872,7 @@ section#footer h2 {
   }
 
   .callto-container {
-    padding: 2rem;
+    padding: 1.6rem;
     width: 95%;
   }
 
@@ -908,5 +889,45 @@ section#footer h2 {
     margin-top: 1.5rem;
     font-size: .85rem;
     padding: .6rem .8rem
+  }
+
+  .callto-container h3 {
+    font-size: 1rem;
+  }
+
+  .foot-links {
+    gap: 1rem;
+  }
+
+  section#footer h4 {
+    margin-bottom: .5rem;
+  }
+
+  .footer-container {
+    gap: 3rem;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container p,
+  .footer-column {
+    font-size: .9rem;
+  }
+
+  .footer-bottom {
+    font-size: .825rem;
+  }
+
+  .social-links a {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .social-links img {
+    /* margin-right: 1rem; */
+    width: 1rem;
+    height: 1rem;
   }
 }
