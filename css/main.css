@@ -2,8 +2,9 @@
 
 :root {
   /* Colors */
-  --primary: #C5A46D;
+  --primary: #c5a46d;
   --light-color: #f1f1f1;
+  --ltbrwn: #ffefd3;
   /* Light grey for backgrounds */
   --text-color-h: #1a1a1a;
   /* Darker grey for headers */
@@ -88,7 +89,12 @@ h1 {
 img {
   width: 100%;
 }
-
+.txt-style{
+  color: #fff;
+  background: var(--primary);
+  box-shadow: 4px 4px 1px 0px rgba(128, 107, 71, 0.75);
+  padding: .4rem;
+}
 .heading_section {
   text-align: center;
   margin-bottom: var(--spacing-4x);
@@ -552,6 +558,42 @@ section#menu .product_lists .product .product_details p {
     transform: translateX(-50%);
   }
 }
+.close-sale-contain{
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+.close-sale{
+gap: 5rem;
+width: 90%;
+}
+.close-sale h2{
+margin-bottom: 2rem;
+text-transform: capitalize;
+} 
+.sale-img{
+padding: 3rem;
+background: var(--ltbrwn);
+box-shadow: 10px 10px 3px 0px rgba(197,164,109,0.75);
+border-radius: 1rem;
+/* width: 50%; */
+}
+.sale-img img{
+width: 20rem;
+}
+.sale-info p{
+  margin-bottom: 3rem;
+}
+.sale-link{
+  color: var(--primary);
+  margin-top: 2rem;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid var(--primary);
+  gap: .4rem;
+  display: inline-flex;
+  align-items: center;
+}
+
 
 /* CALL TO ACTION */
 .call-to-action {
@@ -698,14 +740,18 @@ section#footer h4 {
   .heading_ h3 {
     font-size: 2rem;
   }
-
+  .sale-img img {
+    width: 12rem;
+}
 }
 
 @media (max-width: 868px) {
   .callto-container h3 {
     font-size: 1.2rem;
   }
-
+  .sale-info p {
+    margin-bottom: 0rem;
+}
   .cta-info {
     flex-direction: column;
     gap: 1.5rem;
@@ -808,6 +854,22 @@ section#footer h4 {
     font-size: .8rem;
   }
 
+  .close-sale {
+    flex-direction: column;
+}
+.sale-img {
+  padding: 3rem;
+  max-width: 75%;
+  height: auto;
+}
+.sale-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.close-sale h2 {
+ line-height: 2.5rem;
+}
   .callto-container {
     padding: 3rem 2rem;
     width: 90%;
@@ -870,7 +932,31 @@ section#footer h4 {
   .review-card p {
     font-weight: 400;
   }
-
+  .sale-img {
+    padding: 1.6rem;
+    max-width: 95%;
+  }
+  .close-sale {
+    gap: 3rem;
+  }
+  .close-sale h2{
+    font-size: 1rem;
+    width: 85%;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+  .close-sale h2 {
+    line-height: 1.5rem;
+}
+.txt-style {
+  padding: .2rem;
+}
+  .sale-info p {
+    font-size: .85rem;
+  }
+  .sale-info a{
+    font-size: .9rem;
+  }
   .callto-container {
     padding: 1.6rem;
     width: 95%;
