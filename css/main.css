@@ -995,7 +995,9 @@ section#footer h4 {
   section#hero .container>p {
     display: none;
   }
-
+  section#hero .hero_bottom_fix .container .card {
+margin-top:2rem ;
+  }
   .about-info p {
     font-size: .9rem;
   }
