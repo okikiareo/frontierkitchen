@@ -20,6 +20,25 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = scrollTop;
 });
+// grab elements
+const btn = document.querySelector('.menu_btn');
+const nav = document.querySelector('header .nav');
+const closeNav = document.querySelector('.nav-close');
+
+function toggleMenu() {
+  nav.classList.toggle('open');
+}
+
+// open on hamburger click
+btn.addEventListener('click', toggleMenu);
+
+// close on × click
+closeNav.addEventListener('click', toggleMenu);
+
+// optional: close when any link is clicked
+document.querySelectorAll('header .nav a').forEach(link => {
+  link.addEventListener('click', () => nav.classList.remove('open'));
+});
 
 const menuSwiper = new Swiper('.product_lists', {
   slidesPerView: 1,
