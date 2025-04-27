@@ -1,0 +1,39 @@
+
+
+#header .container {
+    color: #000;
+}
+.prod-head-section{
+    justify-content: center;
+    margin-top: 3rem;
+}
+.prod-head {
+    padding: 2rem 3rem;
+    color: #fff;
+    background: var(--primary);
+    width: 100%;
+    border-radius: 10px;
+
+}
+.prod-head h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+.products{
+    margin: 2rem 0;
+}
+.product-inner button{
+    padding: .6rem 1.2rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: none;
+    color: #383838;
+    margin-bottom: 2rem;
+}
+.active-btn{
+    border-bottom: 1px solid #000 !important;
+}
+.prod-show img{
+    border-radius: 15px;
+}
+/* MEDIA QUERY */
