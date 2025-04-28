@@ -71,3 +71,5 @@ if (wrapper) {
   const now = new Date();
   yearEl.textContent = now.getFullYear();
 })();
+
+// PRODUCTS 
