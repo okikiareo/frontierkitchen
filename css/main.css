@@ -697,7 +697,9 @@ section#footer h4 {
 .footer-brand img {
   width: 1.2rem;
 }
-
+.footer-brand p{
+  margin-bottom: .25rem;
+}
 .foot-links {
   justify-content: space-between;
   width: 40%;
