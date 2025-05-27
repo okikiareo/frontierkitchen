@@ -1000,6 +1000,9 @@ section#footer h4 {
   section#hero .hero_bottom_fix .container .card {
 margin-top:3.5rem ;
   }
+  section#hero .hero_bottom_fix .container .scroll_down {
+    display: none;
+}
   .about-info p {
     font-size: .9rem;
   }
